@@ -1,5 +1,5 @@
- #ifndef MCP4561_H
-    #define MCP4561_H
+ #ifndef MCP4461_H
+    #define MCP4461_H
    //  #include <Wire.h>
 	 #if ARDUINO >= 100
 		#include "Arduino.h"
@@ -36,7 +36,8 @@
 			MCP4461(uint8_t dev_address);
             ~MCP4461();
 			// declare all our functions here
-			// uint8_t output(uint8_t wiper, uint16_t setValue);
+			uint8_t setWiper(uint8_t wiper, uint16_t setValue);
+			uint16_t getWiper(uint8_t wiper);
 			uint16_t read(uint8_t mem_addr);	 // mem addr 0x00 - 0x0f ( 0-16 ), returns 9 bit value at that adress
 			uint_8_t write(uint8_t mem_addr, uint16_t setValue); // mem_addr is 00-0F, setvalue is 0-257 returns 1if succesful
 			uint_8_t openCircuit();
