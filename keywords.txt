@@ -1,0 +1,26 @@
+#######################################
+# Syntax Coloring Map for MCP4461
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+MCP4461	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setWiperKEYWORD2
+getWiperKEYWORD2
+read	KEYWORD2
+write	KEYWORD2
+openCircuit KEYWORD2
+enableOutput KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+
