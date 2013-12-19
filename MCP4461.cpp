@@ -68,7 +68,7 @@ uint8_t setWiper(uint8_t wiper, uint16_t setValue)
 /*
 a wrapper for the read, specific to the wipers
 */
-uint16_t getWiper(uint8_t wiper, uint16_t setValue)
+uint16_t getWiper(uint8_t wiper)
 {
 	return read(wiper);
 }
